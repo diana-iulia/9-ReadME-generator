@@ -28,7 +28,7 @@ const questions = [
         filter(val) {
             return val.toLowerCase();
           },
-        default: 'dianaiuliacalin'
+        default: 'diana-iulia'
     },
     {
         type:"input",
@@ -36,7 +36,7 @@ const questions = [
         message: "What is your email address?",
         validate: function(email)
         {
-            // Regex mail check (return true if valid mail)
+            // Regex check returns true if email is valid
             return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
         }
     },
@@ -61,23 +61,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-// use the fs module to write `data` to `fileName`
-// TODO: Create a function to initialize app
 function init() {
     inquirer
     .prompt(questions)
     .then(answers => {
-
+        
         // console.log answers
         const myMarkdown = markdown (answers);
-
+        
+        // use the fs module to write `data` to `fileName`
         // call the `writeFile` function with your desired file name and `myMarkdown`
-        //fs.writeFile( file, data, options, callback )
-        fs.writeFile('neoREADME.md', myMarkdown, (err) => {
+        // EXAMPLE fs.writeFile( file, data, options, callback )
+        fs.writeFile('README.md', myMarkdown, (err) => {
                 if (err) {
                         console.log(err);
                 } else {
-                        console.log("Sweet dude! You just generated a README.md for your project! Find it in neoREADME.md")
+                        console.log("Sweet, buddy! You just generated a README.md for your project!")
                 }
         });
     });
