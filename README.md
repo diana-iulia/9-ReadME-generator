@@ -1,24 +1,25 @@
  
 # README Generator
 
-## About: A Node.js based application which uses the inquirer package to generate a README.md file from scratch
 
-# [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+A Node.js based application which uses the inquirer package to generate a README.md file from scratch
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ---
 Table of Contents
 ---
-1. [[#contact-info || Contact Info]]
+1. [Contact Info](#contact-info)
 
-2. [[#install-command || How to Install]]
+2. [How to Install](#install-command-npm-i)
 
-3. [[#test-command || How to Test]]
+3. [How to Test](#test-command-npm-test)
 
-4. [[#qna || Additional Info]]
+4. [Additional Info](#qna)
 
-5. [[#contribute || Contribute]]
+5. [Contribute](#contribute)
 
-6. [[#license || License]]
+6. [License](#license-mit)
 ---
 
 ---
